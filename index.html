@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seletor de Pasta com PDFs</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div class="logo">
+                <i class="fas fa-file-pdf"></i>
+                <h1>Seletor de Pasta com PDFs</h1>
+            </div>
+            <div class="dark-mode-toggle">
+                <span>Modo Escuro</span>
+                <label class="switch">
+                    <input type="checkbox" id="darkModeToggle">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="folder-selection">
+                <p><i class="fas fa-folder"></i> Selecione a pasta com arquivos PDF:</p>
+                <button id="folderSelectBtn" class="btn-primary">Escolher pasta</button>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="pdf-list">
+                <h2><i class="fas fa-list"></i> Arquivos PDF encontrados:</h2>
+                <div id="pdfListContainer" class="pdf-list-container">
+                    <!-- PDFs will be listed here -->
+                    <p class="empty-message">Nenhum arquivo encontrado</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
